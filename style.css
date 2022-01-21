@@ -1,0 +1,147 @@
+/* global styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #262626;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* typography */
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.results-text,
+.results-icon {
+    font-size: 1.5rem;
+}
+
+.results-icon {
+    color: #e8d92e;
+   margin-right: .5rem;
+}
+
+/* layout */
+
+.display-results {
+    display: inline-block;
+    margin: 0 0 2rem;
+
+}
+
+.display-windows {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    position: relative;
+    font-size: 10rem;
+    background-color: #fff;
+    color: #262626;
+    border: .25rem solid #ababab;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 25rem;
+    height: 30rem;
+}
+
+.window .name {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25rem;
+    margin-right: 15rem;
+}
+
+.rpc-wrapper {
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 23rem 0;
+    margin-top: 1.2rem;
+    margin-bottom: 4rem;
+    border-top: .1rem solid #fff;
+}
+
+.rpc-buttons {
+    position: absolute;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    margin-top: 3rem;
+}
+
+.rpc-buttons button {
+    font-size: 3rem;
+    background-color: #fff;
+    color: #262626;
+    border: .1rem solid #ababab;
+    border-radius: 50%;
+    margin: 0 1rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition-duration: .2s;
+    
+}
+
+.rpc-buttons button:hover {
+    background-color: #262626;
+    color: #fff;
+    transition-duration: .2s;
+}
+
+.score-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 51rem;
+    height: 2rem;
+}
+
+.score-wrapper .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score .pip {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 0 .2rem;
+    border-radius: 50%;
+}
+
+.player {
+    color: #36ba1e;
+}
+
+.computer {
+    color: red;
+}
