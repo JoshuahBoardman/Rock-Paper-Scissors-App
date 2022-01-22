@@ -107,7 +107,7 @@ function pointAllocation(results) {
         `;
     } else {
         displayResults.innerHTML = `
-        <span class="results-text">The round is a tie.</span>
+        <span class="results-text">Round ${roundNumber} is a tie.</span>
         `;
     }
 };
