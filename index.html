@@ -16,37 +16,27 @@
 
     <h1>Rock Paper Scissors</h1>
 
-    <div class="display-results">
-        <span class="results-icon"><i class="fas fa-trophy"></i></span>
-        <span class="results-text computer">  Player wins the round!</span>
-    </div>
+    <div class="display-results" id="display-results"></div>
     <div class="display-windows">
-        <div class="window" id="player-window">
+        <div class="window player-border-color" id="player-window">
             <span class="name player">Player:</span>
-            <i class="fas fa-hand-paper"></i>
+            <div id="player-icon"></div>
         </div>
-        <div class="window" id="player-window">
-            <span class="name computer ">Computer:</span>
-            <i class="fas fa-hand-rock"></i>
+        <div class="window computer-border-color" id="computer-window">
+            <span class="name computer">Computer:</span>
+            <div id="computer-icon"></div>
         </div>
     </div>
     <div class="score-wrapper">
-        <div class="score" id="palyer-score">
-                <div class="pip"></div>
-                <div class="pip"></div>
-                <div class="pip"></div>
-        </div>
-        <div class="score" id="computer-score">
-                <div class="pip"></div>
-                <div class="pip"></div>
-        </div>
+        <div class="score" id="player-pips"></div>
+        <div class="score" id="computer-pips"></div>
     </div>
-    <div class="rpc-wrapper">
-        <span>Choose an option</span>
-        <div class="rpc-buttons">
-            <button><i class="fas fa-hand-rock rock"></i></button>
-            <button><i class="fas fa-hand-paper paper"></i></button>
-            <button><i class="fas fa-hand-scissors scissors"></i></button>
+    <div class="rpc-button-wrapper">
+        <span>Choose</span>
+        <div class="rpc-buttons" id="rpc-buttons">
+            <button class="rock"><i class="fas fa-hand-rock rock"></i></button>
+            <button class="paper"><i class="fas fa-hand-paper paper"></i></button>
+            <button class="scissors"><i class="fas fa-hand-scissors scissors"></i></button>
         </div>
     </div>
 </body>

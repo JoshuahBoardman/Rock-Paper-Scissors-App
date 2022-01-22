@@ -69,6 +69,15 @@ h1 {
     height: 30rem;
 }
 
+.player-border-color {
+    border-color: #36ba1e;
+}
+
+.computer-border-color {
+    border-color: red;
+}
+
+
 .window .name {
     position: absolute;
     font-size: 1.5rem;
@@ -77,7 +86,7 @@ h1 {
     margin-right: 15rem;
 }
 
-.rpc-wrapper {
+.rpc-button-wrapper {
     position: relative;
     font-size: 1.5rem;
     display: flex;
